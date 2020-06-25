@@ -6,8 +6,10 @@ var router = express.Router();
 router.get('/', function (req, res) {
     //console.log(req.query);
     var method = req.query.method;
+
     var num1 = req.query.x;
     var num2 = req.query.y;
+
     console.log(method + " " + num1 + " " + num2);
     var result = 0;
     if (method == "add") {
